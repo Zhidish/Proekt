@@ -7,6 +7,8 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page session="true"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <html>
 <head>
     <title>Title</title>
@@ -20,7 +22,6 @@
             <legend>Please Login</legend>
 
 
-
             <label for="username">Username</label> <input type="text"
                                                           id="username" name="username"/> <br>
             <label for="password">Password</label>
@@ -29,7 +30,7 @@
                 <button type="submit">Log in</button>
             </div>
         </fieldset>
-        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     </form>
 </div>
 </body>

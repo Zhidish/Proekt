@@ -16,8 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component("userservice")
-public class
-UserDetailServiceImpl implements UserDetailsService {
+public class UserDetailServiceImpl implements UserDetailsService {
 
 
     @Autowired
